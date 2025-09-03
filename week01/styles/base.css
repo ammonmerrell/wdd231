@@ -21,6 +21,14 @@ header span{
 
 /* *********navigation********** */
 
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
 .hamburger {
     background: none;
     border: none;
