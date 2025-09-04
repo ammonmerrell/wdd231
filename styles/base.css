@@ -4,13 +4,20 @@
     --secondary-color: #EEBD7D;
     --accent1-color: #FDF2AF;
     --accent2-color: #13047A;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+
 }
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border: solid 1px #ddd;
+    border: solid 1px var(--secondary-color);
     column-gap: 8px;
 }
 
@@ -23,7 +30,7 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #3D405B;
+    color: var(--primary-color);
     ;
 }
 
@@ -47,15 +54,15 @@ header span {
 .navigation a {
     display: block;
     padding: 0.8rem 10px;
-    color: #3D405B;
+    color: var(--primary-color);
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--accent1-color);
 }
 
 .hamburger {
     background: none;
     border: none;
-    color: #3D405B;
+    color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -76,12 +83,12 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #E07A5F;
+    background-color: var(--accent1-color);
 }
 
 h1 {
     margin-left: 10px;
-    color: #3D405B;
+    color: var(--primary-color);
 }
 
 /* **********Footer********** */
@@ -104,7 +111,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: #ccc solid 1px;
+    border: black solid 1px;
     border-radius: 22px;
 }
 
@@ -114,5 +121,5 @@ footer {
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: var(--accent1-color);
 }
