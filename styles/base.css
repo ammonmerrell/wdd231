@@ -91,6 +91,15 @@ h1 {
     color: var(--primary-color);
 }
 
+/* **********main********** */
+section {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+
+
+
 /* **********Footer********** */
 
 footer {
