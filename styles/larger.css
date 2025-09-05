@@ -25,8 +25,8 @@
         display: flex;
     }
 
+    .navigation a {
+        border: none;
+    }
 }
 
-.navigation a {
-    border: none;
-}
