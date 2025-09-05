@@ -33,5 +33,10 @@
         display: grid;
         grid-template-columns: 300px 300px 300px;
     }
+    main section div {
+        display: flex;
+        /* background-color: red; */
+    }
+
 }
 
