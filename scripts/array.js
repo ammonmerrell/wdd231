@@ -1,7 +1,7 @@
 
 const list = document.querySelector("#modules");
 
-createCourses(courses);
+
 
 function createCourses(modules) {
     document.querySelector("#modules").innerHTML = "";
@@ -115,3 +115,5 @@ const courses = [
         completed: false
     }
 ]
+
+createCourses(courses);
