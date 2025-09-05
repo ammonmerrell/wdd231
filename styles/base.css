@@ -38,7 +38,7 @@ header span {
 
 .navigation {
     display: none;
-    border-bottom: solid 1px #eee;
+    border-bottom: solid 1px var(--accent2-color);
 }
 
 .navigation.show {
@@ -79,7 +79,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: var(--accent1-color);
 }
 
 .navigation a:hover {
@@ -94,7 +94,7 @@ h1 {
 /* **********Footer********** */
 
 footer {
-    background-color: #eee;
+    background-color: var(--accent1-color);
     padding: 1rem 10px;
     text-align: center;
 }
@@ -111,7 +111,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: black solid 1px;
+    border: var(--accent2-color) solid 1px;
     border-radius: 22px;
 }
 
