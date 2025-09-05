@@ -83,7 +83,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
 }
 
 h1 {
