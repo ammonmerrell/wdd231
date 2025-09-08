@@ -1,11 +1,11 @@
 :root{
-    --primary-color:#EDFFD9;
+    --primary-color:#FFE19C;
     --secondary-color:#DB9D47;
     --background-color:#3A3042;
-    /* --text-color:; */
+    --text-color:#EDFFD9;
     font-family: "Newsreader", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
+    --accent-color: #FF784F;
 }
