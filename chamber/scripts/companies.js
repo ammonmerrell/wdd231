@@ -1,4 +1,4 @@
-const url = 'https://github.com/ammonmerrell/wdd231/blob/main/chamber/data/members.json';
+const url = 'https://raw.githubusercontent.com/ammonmerrell/wdd231/main/chamber/data/members.json';
 const cards = document.querySelector("#companies");
 async function getCompanyData() {
     const response = await fetch(url);
