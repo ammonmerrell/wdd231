@@ -5,7 +5,7 @@ const list = document.querySelector("#modules");
 
 function createCourses(modules) {
     document.querySelector("#modules").innerHTML = "";
-    modules.array.forEach(courses => {
+    modules.forEach(element => {
         let card = document.createElement("section");
         let topic = document.createElement("p");
         let numb = document.createElement("p");
@@ -14,23 +14,26 @@ function createCourses(modules) {
         let cert = document.createElement("p");
         let info = document.createElement("p");
         let tech = document.createElement("p");
+        // let isComp = document.createElement('p');
 
 
         topic.textContent = element.subject;
         numb.innerHTML = element.number;
-        // dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        // area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-        // image.setAttribute("src", temple.imageUrl);
-        // image.setAttribute("alt", `${temple.templeName} Temple`);
-        // image.setAttribute("loading", "lazy");
+        // isComp.innerHTML = element.completed;      
+
 
         card.appendChild(topic);
         card.appendChild(numb);
-        // card.appendChild(dedicated);
-        // card.appendChild(area);
-        // card.appendChild(image);
-
-        list.appendChild(card);      
+        // card.appendChild(isComp);
+        
+        // if (isComp.includes("true")) {
+        //     card.classList.toggle("done");
+        // }
+        // if (isComp.includes("false")) {
+        //     card.classList.toggle("done")
+        // }
+        
+        list.appendChild(card);
     });
 
 }
@@ -117,3 +120,26 @@ const courses = [
 ]
 
 createCourses(courses);
+
+// const complete = document.querySelectorAll("section");
+
+const allButton = document.querySelector("#all");
+const wddButton = document.querySelector("#wdd");
+const cseButton = document.querySelector("#cse");
+
+
+allButton.addEventListener("click", () => {
+    createCourses(courses)
+});
+wddButton.addEventListener("click", () => {
+    createCourses(courses.filter(course => course.subject.includes("WDD")));
+});
+
+cseButton.addEventListener("click", () => {
+    createCourses(courses.filter(course => course.subject.includes("CSE")));
+});
+
+// complete.addEventListener("", () => {
+//     createCourses(courses.filter(course => course.completed.includes("true"))
+//     )
+// });
