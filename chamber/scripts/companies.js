@@ -23,5 +23,5 @@ const displayCompanies = (companies) => {
         card.appendChild(pnum);
         card.appendChild(alink);
         cards.appendChild(card);
-    })
+    });
 }
