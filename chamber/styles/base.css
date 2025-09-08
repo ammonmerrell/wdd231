@@ -32,7 +32,7 @@
      padding: 0.8rem 10px;
      color: var(--primary-color);
      text-decoration: none;
-     border-bottom: solid 1px var(--accent-color);
+     border-bottom: solid 1px var(--primary-color);
  }
 
  .hamburger {
