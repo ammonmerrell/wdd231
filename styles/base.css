@@ -96,8 +96,11 @@ section {
     padding: 10px;
     color: var(--primary-color);
 }
-
-
+/* 
+.mod section{
+    background-color: red;
+    border: solid white;
+} */
 
 
 /* **********Footer********** */
