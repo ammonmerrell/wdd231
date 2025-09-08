@@ -12,3 +12,57 @@
 /* .navigation {
     display: none;
 } */
+ .navigation {
+     display: none;
+     border-bottom: solid 1px var(--accent2-color);
+ }
+
+ .navigation.show {
+     display: block;
+ }
+
+ .navigation ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navigation a {
+     display: block;
+     padding: 0.8rem 10px;
+     color: var(--primary-color);
+     text-decoration: none;
+     border-bottom: solid 1px var(--accent-color);
+ }
+
+ .hamburger {
+     background: none;
+     border: none;
+     color: var(--primary-color);
+     cursor: pointer;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+ .hamburger::after {
+     content: "\2630";
+     font-size: 2rem;
+ }
+
+ .hamburger.show::after {
+     content: "\00d7";
+     font-size: 2rem;
+ }
+
+ .navigation li.current {
+     background-color: var(--accent-color);
+ }
+
+ .navigation a:hover {
+     background-color: var(--secondary-color);
+ }
+
+ h1 {
+     margin-left: 10px;
+     color: var(--primary-color);
+ }
