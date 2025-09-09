@@ -3,9 +3,9 @@
         max-width: 900px;
         margin: 0 auto;
     }
-    header{
+    /* header{
         grid-template-columns: 24px auto;
-    }
+    } */
     
     .hamburger{
         display: none;
@@ -24,12 +24,12 @@
         position: fixed;
         margin-top: -20px;
     }
-    main {
+    /* main {
         padding: 20px;
         display: grid;
         grid-template-columns: 600px 400px;
         grid-template-rows: 300px 300px;
-    }
+    } */
     /* main section div {
         display: flex;
     } */
