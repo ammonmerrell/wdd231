@@ -66,12 +66,26 @@
      margin-left: 10px;
      color: var(--primary-color);
  }
+
+ .grid::after {
+      content: "#";
+      font-size: 2rem;
+  }
+
+   .grid.form::after {
+       content: "|";
+       font-size: 2rem;
+   }
  /* ***** companies ***** */
 
- div{
+ .com{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* grid-template-rows: repeat(auto-fit, minmax(320px, 1fr)); */
+ }
+ .com.form{
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
  }
  section{
     background-color: var(--background-color);
