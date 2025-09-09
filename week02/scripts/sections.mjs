@@ -1,4 +1,4 @@
-function setSectionSelection() {
+function setSectionSelection(section) {
     const sectionSelect = document.querySelector("#sectionNumber");
     byuiCourse.sections.forEach((section) => {
         const option = document.createElement("option");
