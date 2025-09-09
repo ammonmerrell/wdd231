@@ -17,4 +17,16 @@ async function apiFetch() {
         console.log(error);
     }
 }
+
 apiFetch();
+
+function displayResults(data) {
+
+    weatherTemp.innerHTML = `${desc.main.temp}&deg;F`;
+    const iconsrc = `https//openweathermap.org/img/wn/${weatherIcon}.@2x.png`;
+    let desc = data.weather[0].icon;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+    captionDest.textContent = `${desc}`;
+    
+}
