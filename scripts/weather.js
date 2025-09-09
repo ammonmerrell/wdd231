@@ -24,12 +24,12 @@ function displayResults(data) {
 
     let desc = data.weather[0].icon;
     weatherTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https//openweathermap.org/img/wn/${data.weather[0].icon}.@2x.png`;
+    const iconsrc = `https//openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
     captionDest.textContent = `${data.weather.desc}`;
-    
+    console.log(weatherIcon);
 }
 apiFetch();
 
