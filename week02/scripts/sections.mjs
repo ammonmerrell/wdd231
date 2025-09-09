@@ -23,4 +23,4 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
 setTitle(byuiCourse);
 setSectionSelection(byuiCourse.sections);
 renderSections(byuiCourse.sections);
-export function populateSelections(sections) { }
+export default setSectionSelection() 
