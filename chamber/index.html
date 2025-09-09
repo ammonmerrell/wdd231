@@ -23,6 +23,7 @@
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/modified.js" defer></script>
     <script src="scripts/companies.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header><img src="images/salt-lake-com.favicon.ico" alt="Site Logo" width="20" height="20">
@@ -37,12 +38,16 @@
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
-    <main>
-        <img id="hero" src="" alt="" width="" height="">
-        <span id="call"></span>
-        <section id="current"></section>
-        <section id="weather"></section>
-        <section id="spotlight"></section>
+    <main id="lng-pge">
+        <img id="hero" src="images/linkedin.svg" alt="hero img">
+        <span id="call">call</span>
+        <section id="current">current</section>
+        <section id="weather">It is <span id="current-temp"></span>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption id="figcaption"></figcaption>
+        </figure></section>
+        <section id="spotlight">spotlight</section>
     </main>
     <footer><span id="currentYear"></span><span>Ammon Merrell WDD231 </span>
         <p id="lastModified"></p>
