@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+        "name":"Amazon",
+        "address": "8100S-3700W",
+        "phonenumber": "1800-765-2341",
+        "website":"https://www.amazon.com",
+        "image": "amazon-smile.ico",
+        "level": 3 
+    },
+    {
+        "name": "Utah Orchestra",
+        "address": "2100S-1500W",
+        "phonenumber": "1800-341-1234",
+        "website": "https://utah_orchestra.com",
+        "image": "utah-orch-note.ico",
+        "level": 3
+    },
+    {
+        "name": "utah-rolls",
+        "address": "1000S-3300W",
+        "phonenumber": "1800-891-4321",
+        "website": "https://www.utah_rolls.com",
+        "image": "utah-roll.ico",
+        "level": 1
+    },
+    {
+        "name": "target",
+        "address": "6300S-1052W",
+        "phonenumber": "1800-123-4567",
+        "website": "https://www.target.com",
+        "image": "target-target.ico",
+        "level": 2
+    },
+    {
+        "name": "chic-fil-a",
+        "address": "1100S-3700W",
+        "phonenumber": "1800-123-4321",
+        "website": "https://www.chick_fil_a.com",
+        "image": "cow.ico",
+        "level": 3
+    },
+    {
+        "name": "blankets-R-us",
+        "address": "8100S-2700W",
+        "phonenumber": "1800-765-2341",
+        "website": "https://www.blankets_r_us.com",
+        "image": "blanket-r.ico",
+        "level": 2
+    },
+    {
+        "name": "Utah Art",
+        "address": "6300S-3770W",
+        "phonenumber": "1800-234-5678",
+        "website": "https://www.utah_art.org",
+        "image": "utah-art.ico",
+        "level": 1
+    }
+]
+}

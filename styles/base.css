@@ -1,0 +1,137 @@
+/* *********header********** */
+:root {
+    --primary-color: #072498;
+    --secondary-color: #EEBD7D;
+    --accent1-color: #FDF2AF;
+    --accent2-color: #13047A;
+
+    font-family: "Josefin Sans", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border: solid 1px var(--secondary-color);
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    ;
+}
+
+/* *********navigation********** */
+
+.navigation {
+    display: none;
+    border-bottom: solid 1px var(--accent2-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--accent1-color);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+.navigation li.current {
+    background-color: var(--accent1-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+/* **********main********** */
+section {
+    padding: 10px;
+    color: var(--primary-color);
+}
+/* 
+.mod section{
+    background-color: red;
+    border: solid white;
+} */
+
+
+/* **********Footer********** */
+
+footer {
+    background-color: var(--accent1-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--accent2-color) solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px
+}
+
+.social a:hover {
+    background-color: var(--accent1-color);
+}

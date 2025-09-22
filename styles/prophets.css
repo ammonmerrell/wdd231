@@ -1,0 +1,23 @@
+:root{
+    font-family: "Nuosu SIL", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-gap: 0.5rem; */
+}
+section{
+    background-color: rgb(80, 80, 241);
+    border: solid 10px white;
+
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+h2, p{
+    padding-left: 10px;
+}

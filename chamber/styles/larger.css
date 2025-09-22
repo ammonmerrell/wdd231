@@ -1,0 +1,36 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    /* header{
+        grid-template-columns: 24px auto;
+    } */
+    
+    .hamburger{
+        display: none;
+    }
+    .navigation{
+        display: block;
+        border-bottom: solid 1px var(--secondary-color);
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+    h1 {
+        position: fixed;
+        margin-top: -20px;
+    }
+    /* main {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 600px 400px;
+        grid-template-rows: 300px 300px;
+    } */
+    /* main section div {
+        display: flex;
+    } */
+}
