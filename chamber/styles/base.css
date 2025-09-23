@@ -8,6 +8,8 @@
     font-weight: 400;
     font-style: normal;
     --accent-color: #FF784F;
+    --accent2-color: #45442D;
+    background-color: var(--accent2-color);
 }
 /* .navigation {
     display: none;
