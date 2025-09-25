@@ -12,7 +12,7 @@ console.log(myInfo.get('ordinance'));
 console.log(myInfo.get('date'));
 console.log(myInfo.get('location'));
 
-const results = document.querySelector('results');
+
 
 results.innerHTML = `
 <p>Appointment for ${myInfo.get('first')} ${myInfo.get('last')}</p>
