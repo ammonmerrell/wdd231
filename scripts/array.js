@@ -1,7 +1,9 @@
 
 const list = document.querySelector("#modules");
 
-
+const modal = document.getElementById('course-info');
+const endModal = document.getElementById('end-info');
+const modalButton = document.getElementById('button');
 
 function createCourses(modules) {
     document.querySelector("#modules").innerHTML = "";
@@ -16,6 +18,7 @@ function createCourses(modules) {
         let tech = document.createElement("p");
         // let isComp = document.createElement('p');
 
+         
 
         topic.textContent = element.subject;
         numb.innerHTML = element.number;
@@ -34,8 +37,14 @@ function createCourses(modules) {
         // }
         
         list.appendChild(card);
+        list.addEventListener("click", () => showInfo(x));
     });
 
+}
+
+function showInfo(x) {
+    modal.innerHTML = `${x.title} ${x.description}`;
+    modal.showModal();
 }
 
 
