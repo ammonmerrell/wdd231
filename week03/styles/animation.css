@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* *****Fade in text box/ turn blue when clicked***** */
+
+.box {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s ease;
+}
+.box:hover {
+background-color: lightblue;
+}
+
+/* *****end***** */
+
+/* *****enlarge text box when on box***** */
+
+/* .box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: width 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s;
+}
+
+.box:hover {
+    width: 150px;
+    height: 150px;
+} */
+/* *****end***** */
+
+/* transform */
+.box {
+    transform: rotate(15deg) translateX(20px) scale(1.2);
+}
+/* *****end***** */
+
+
+@keyframes fadeColor {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+.color {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    animation: fadeColor 2s ease-in-out infinite alternate;
+}
+
+#loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#loader::after {
+    content: '⚙️';
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    animation: pluse 1.5s ease-in-out infinite;
+}
+
+#loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999;
+    border-radius: 50%;
+    transition: spin 1.5s linear infinite;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+.loader-t:hover::after {
+    transform: translate(-50% -50%) scale(1.5);
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+@keyframes pulse {
+    0%, 100% {transform: translate(-50% -50%) scale(1);}
+    50% {transform: translate(-50% -50%) scale(1.25);}
+}
