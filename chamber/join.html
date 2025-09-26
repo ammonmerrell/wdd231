@@ -24,6 +24,7 @@
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/modified.js" defer></script>
     <script src="scripts/companies.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +42,29 @@
     </nav>
     <main>
         <h1>Chamber of Commerce Form</h1>
-        
+        <method="get" action="thankyou.html" class="form">
+            <label>First Name<input type="text" name="first" required autocomplete="first-name"
+                    title="Your First Name"></label>
+            <label>Last Name<input type="text" name="last" required autocomplete="last-name"
+                    title="Your Last Name"></label>
+            <label>Organizational Title<input type="text" name="organization" autocomplete="organization-title"
+                    title="Your Organization Title"></label>
+            <label>Email address<input type="email" required name="email" title="Your Email Address"
+                    autocomplete="email-address" placeholder="john73@gmail.com"></label>
+            <label>Phone Number<input type="tel" required name="phone" title="Your Phone Number"
+                    autocomplete="phone-number"></label>
+            <label>Business/Organization Name<input type="text" required name="company"
+                    title="Your Business/Organization Name" autocomplete="organization"></label>
+            <p>Membership Level</p>
+            <label>NP Membership<input type="radio" name="np" title="Non-Profit"></label>
+            <label>Bronze Membership<input type="radio" name="bronze" title="Bronze"></label>
+            <label>Silver Membership<input type="radio" name="silver" title="Silver"></label>
+            <label>Gold Membership<input type="radio" name="gold" title="Gold"></label>
+            <label>Organization Description<textarea name="desc" title="Description"></textarea></label>
+            <label><input type="hidden" name="timestamp" id="time"></label>
+            <label><input type="submit" value="Sign Up"></label>
+
+        </form>
     </main>
     <footer><span id="currentYear"></span><span>Ammon Merrell WDD231 </span>
         <p id="lastModified"></p>
