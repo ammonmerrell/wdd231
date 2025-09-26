@@ -97,6 +97,22 @@
  p {
     padding-left: 10px;
  }
+/* *****form***** */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 10px, 50px; */
+    /* background-color: red; */
+}
+.form label {
+    margin-bottom: 10px;
+    grid-column: 1;
+}
+.form input, textarea {
+    
+}
 
  /* *****Footer***** */
  footer{
