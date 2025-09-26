@@ -111,7 +111,8 @@
     grid-column: 1;
 }
 .form input, textarea {
-    
+    display: flex;
+    flex-direction: column;
 }
 
  /* *****Footer***** */
