@@ -55,11 +55,14 @@
                     autocomplete="phone-number"></label>
             <label>Business/Organization Name <input type="text" required name="company"
                     title="Your Business/Organization Name" autocomplete="organization"></label>
-            <p>Membership Level</p>
-            <label>NP Membership <input type="radio" name="np" title="Non-Profit"></label>
-            <label>Bronze Membership <input type="radio" name="bronze" title="Bronze"></label>
-            <label>Silver Membership <input type="radio" name="silver" title="Silver"></label>
-            <label>Gold Membership <input type="radio" name="gold" title="Gold"></label>
+            <label>Membership Level
+                <select name="level" required>
+                    <option value="">None</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+            </label>
             <label>Organization Description <textarea name="desc" title="Description"></textarea></label>
             <label><input type="hidden" name="timestamp" id="time"></label>
             <label><input type="submit" value="Sign Up"></label>
