@@ -2,7 +2,7 @@ const card = document.querySelector('#cards')
 const mydialog = document.querySelector('#mydialog')
 const infor = document.querySelector('#info')
 const closeit = document.querySelector('#myclose')
-const openbut = document.querySelector('#open')
+
 
 let cardLevel = [
     {
@@ -31,9 +31,15 @@ function displayItems(data) {
     data.forEach(level => {
         console.log(level)
         const divice = document.createElement('div')
-        divice.innerHTML = `a`
-        openbut.addEventListener('click', () => showStuff(level));
+        divice.innerHTML = `${level.level}`
+        const learn = document.createElement('button')
+        learn.textContent = 'Learn More'
+        learn.addEventListener('click', () => {
+            showStuff(level)
+        });
         card.appendChild(divice)
+        card.appendChild(learn)
+        
     });
 }
 
