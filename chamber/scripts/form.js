@@ -31,6 +31,7 @@ function displayItems(data) {
     data.forEach(level => {
         console.log(level)
         const divice = document.createElement('div')
+        divice.classList.add("ad")
         divice.innerHTML = `${level.level}`
         const learn = document.createElement('button')
         learn.textContent = 'Learn More'
