@@ -102,6 +102,20 @@ section {
     border: solid white;
 } */
 
+.ad{
+    background-color: red;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    }
+    to
+    {
+        box-shadow: 0 0 1rem rgb(255 0 0 / 40%);
+    }
+}
+
 dialog{
     width: 400px;
     height: 300px;
