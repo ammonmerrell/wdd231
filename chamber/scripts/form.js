@@ -49,5 +49,5 @@ function showStuff(x) {
     infor.innerHTML = `${x.level}\n${x.info}`
     console.log(x.level)
     console.log(x.info)
-    mydialog.showModel()
+    mydialog.show()
 }
