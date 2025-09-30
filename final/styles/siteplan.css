@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    /* display: flex;
+    flex-direction: row; */
+    background-color: rgb(39, 39, 121);
+
+}
+
+h1,
+h2,
+h3 {
+    background-color: burlywood;
+    color: rgb(39, 39, 121);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+    color: burlywood;
+    background-color: rgb(39, 39, 121);
+    font-family: "Playfair Display", serif;
+}
+
+footer {
+    background-color: rgb(39, 39, 121);
+}
+
+img {
+    display: block;
+    width: 75%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    color: burlywood;
+}
+
+@media screen and (min-width: 500px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div p {
+        display: contents;
+    }
+
+    div {
+        margin: 1rem;
+    }
+
+    :link {
+        background-color: burlywood;
+        color: rgb(39, 39, 121)
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
