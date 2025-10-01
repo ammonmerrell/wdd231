@@ -69,6 +69,10 @@
      color: var(--primary-color);
  }
 
+label,div,span{
+    color: var(--primary-color);
+ }
+
  .grid::after {
       content: "#";
       font-size: 2rem;
