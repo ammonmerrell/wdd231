@@ -20,6 +20,10 @@
     .navigation a {
         border: none;
     }
-
+.visited {
+    display: block;
+    position: absolute;
+    right: 100px;
+}
     
 }
