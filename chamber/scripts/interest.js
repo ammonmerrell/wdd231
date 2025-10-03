@@ -77,8 +77,6 @@ function displayItems(infom) {
         address1.innerHTML = `${level.address}`
         const paragraph = document.createElement('p')
         paragraph.innerHTML = `${level.description}`
-
-        // divice.innerHTML = `${level.name}\n${level.address}`
         const learn = document.createElement('button')
         learn.textContent = 'Learn More'
         learn.addEventListener('click', () => {
