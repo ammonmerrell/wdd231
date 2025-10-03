@@ -119,6 +119,12 @@ label,div,span,p{
     flex-direction: column;
 }
 
+/* *****Discover***** */
+.inter{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 30px, 30px, 30px, 30px,30px, 30px,30px, 30px;
+}
  /* *****Footer***** */
  footer{
     color: var(--text-color);
