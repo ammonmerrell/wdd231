@@ -73,6 +73,7 @@ function displayItems(infom) {
         const pic = document.createElement('img')
         pic.src = `${level.url}`
         pic.alt = `${level.name}`
+        pic.loading = 'lazy'
         const address1 = document.createElement('address')
         address1.innerHTML = `${level.address}`
         const paragraph = document.createElement('p')
