@@ -13,21 +13,21 @@ header {
 div {
     /* display: flex;
     flex-direction: row; */
-    background-color: rgb(39, 39, 121);
+    background-color:var(--secondary-color);
 
 }
 
 h1,
 h2,
 h3 {
-    background-color: burlywood;
-    color: rgb(39, 39, 121);
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
     font-family: "Roboto Condensed", sans-serif;
 }
 
 p {
-    color: burlywood;
-    background-color: rgb(39, 39, 121);
+    color: var(--primary-color);
+    background-color:var(--secondary-color);
     font-family: "Playfair Display", serif;
 }
 /* *****hamburger***** */
@@ -75,7 +75,7 @@ p {
 /* *****footer***** */
 
 footer {
-    background-color: rgb(39, 39, 121);
+    background-color: var(--secondary-color);
 }
 
 img {
@@ -87,6 +87,6 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
-    color: burlywood;
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
 }
