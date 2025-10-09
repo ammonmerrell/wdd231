@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {}
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div p {
+        display: contents;
+    }
+
+    div {
+        margin: 1rem;
+    }
+
+    :link {
+        background-color: burlywood;
+        color: rgb(39, 39, 121)
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
