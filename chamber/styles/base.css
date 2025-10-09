@@ -122,8 +122,8 @@ label,div,span,p{
 /* *****Discover***** */
 .inter{
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 30px, 30px, 30px, 30px,30px, 30px,30px, 30px;
+    grid-template-columns: 1 0;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px;
 }
  /* *****Footer***** */
  footer{
