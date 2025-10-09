@@ -8,7 +8,20 @@
         margin: 0 auto;
     }
 
-    .hamburger {}
+    .hamburger {
+        display: none;
+    }
+    .navigation{
+        display: block;
+    /* border-bottom: solid 1px var(--secondary-color);     */
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a{
+        border: none;
+    }
 
     section {
         display: flex;
