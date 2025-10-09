@@ -11,9 +11,9 @@
     --accent2-color: #45442D;
     background-color: var(--accent2-color);
 }
-/* .navigation {
+.navigation {
     display: none;
-} */
+}
  .navigation {
      display: none;
      border-bottom: solid 1px var(--accent2-color);
