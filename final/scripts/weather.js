@@ -2,6 +2,9 @@ const temp = document.querySelector('#current-temp');
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.76&lon=-111.89&units=imperial&appid=6c343c2a3ace250294bb79f581a2a9df';
 const civN = document.querySelector('#civN');
 
+import { civs } from '../data/civilizations.js'
+console.log(civs)
+
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -19,8 +22,10 @@ async function apiFetch() {
 function displayResults(data) {
     temp.innerHTML = `${data.list[0].main.temp}&deg;f`;
     let tempflo = data.list[0].main.temp;
-    if (tempflo < 50.00) {
-        civN.innerHTML = `a`;
+    if (tempflo < 80.00) {
+        let tempInt = parseInt(tempflo)
+        let newInt =  Math.floor(tempInt * 0.1)
+        civN.innerHTML = `Civilization: ${civs[newInt-1].name}`;
     }
 }
 
