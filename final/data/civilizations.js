@@ -34,11 +34,11 @@ export const civs = [
         "milUnit": "Medjay; +3 combat in friendly territory, doubled when on your buildings you own."
     },
     {
-        "name": "qa",
-        "ability": "+1 culture on districts in capital, and city centers in towns",
-        "uniDev": "Forum(Temple of Jupiter + Basilica); +1 gold and culture for every roman tration in government.",
-        "civUnit": "Legatus; army commander who can create town every three promotions.",
-        "milUnit": "Legion; gains +1 combat for every tradition in the governmant"
+        "name": "spain",
+        "ability": "%15 cheaper to convert town to city, %30 in distant lands",
+        "uniDev": "Plaza(Casa Consistorial + Casa de Contratación); +2 gold in this city for every settlement in distant lands(can only be built in homelands)",
+        "civUnit": "Conquistador; great person who can only be built in cities with a wharf, random effects.",
+        "milUnit": "Tercio; +2 combat, adjacent units get +3 combat vs cavalry units(bonus is only applied once)"
     }, {
         "name": "",
         "ability": "+2 gold on resources",
