@@ -45,3 +45,12 @@
 .navigation a:hover{
     background-color: var(--accent-1-color);
 }
+
+/* ***** non-hamburger portion ***** */
+h1,
+h2,
+h3 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Roboto Condensed", sans-serif;
+}
