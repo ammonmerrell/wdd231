@@ -34,7 +34,7 @@ export const civs = [
         "milUnit": "Medjay; +3 combat in friendly territory, doubled when on your buildings you own."
     },
     {
-        "name": "",
+        "name": "qa",
         "ability": "+1 culture on districts in capital, and city centers in towns",
         "uniDev": "Forum(Temple of Jupiter + Basilica); +1 gold and culture for every roman tration in government.",
         "civUnit": "Legatus; army commander who can create town every three promotions.",
