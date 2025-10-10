@@ -54,3 +54,8 @@ h3 {
     color: var(--secondary-color);
     font-family: "Roboto Condensed", sans-serif;
 }
+p, footer{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-family: "Playfair Display", serif;
+}
