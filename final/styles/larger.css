@@ -18,6 +18,7 @@
 
     .navigation ul{
         display: flex;
+        flex-direction: row;
     }
     .navigation a{
         border: none;
