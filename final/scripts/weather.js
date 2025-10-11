@@ -21,10 +21,32 @@ async function apiFetch() {
 function displayResults(data) {
     temp.innerHTML = `${data.list[0].main.temp}&deg;f`;
     let tempflo = data.list[0].main.temp;
-    if (tempflo < 80.00) {
+    if (tempflo > 80.00) {
+        let tempInt = parseInt(tempflo)
+        let newInt = Math.floor(tempInt * 0.1) + 1;
+        if (tempint < 10) {
+            civN.innerHTML = ` Civilization: ${civs[14].name}`;
+        }
+        if (tempInt > 9) {
+            civN.innerHTML = ` Civilization: ${civs[11].name}`;
+        }
+
+    }
+    if (tempflo < 81.00) {
         let tempInt = parseInt(tempflo)
         let newInt =  Math.floor(tempInt * 0.1)
         civN.innerHTML = ` Civilization: ${civs[newInt-1].name}`;
+    }
+    if (tempflo < 33.00) {
+        let tempInt = parseInt(tempflo)
+        let newInt = Math.floor(tempInt * 0.1) + 1;
+        if (tempint < 4) {
+            civN.innerHTML = ` Civilization: ${civs[13].name}`;
+        }
+        if (tempInt > 3) {
+            civN.innerHTML = ` Civilization: ${civs[12].name}`;
+        }
+        
     }
 }
 
