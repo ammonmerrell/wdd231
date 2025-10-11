@@ -8,7 +8,10 @@
     justify-content: space-around;
 }
 
-/* *****hamberger***** */
+
+
+
+
 
 .navigation{
     display: none;
@@ -50,7 +53,10 @@
     background-color: var(--accent-1-color);
 }
 
-/* ***** non-hamburger portion ***** */
+
+
+
+
 h1,
 h2,
 h3 {

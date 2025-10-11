@@ -13,7 +13,7 @@
     }
     .navigation{
         display: block;
-    /* border-bottom: solid 1px var(--secondary-color);     */
+
     }
 
     .navigation ul{
@@ -43,8 +43,5 @@
         color: rgb(39, 39, 121)
     }
 
-    /* img {
-        width: 50%;
-        height: auto;
-    } */
+
 }
