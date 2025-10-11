@@ -69,3 +69,26 @@ p, footer{
     background-color: var(--secondary-color);
     font-family: "Playfair Display", serif;
 }
+
+
+
+.com {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.com.form {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid var(--secondary-color);
+}
+
+p {
+    padding-left: 10px;
+}
