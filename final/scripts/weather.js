@@ -15,7 +15,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        civN.innerHTML = `Error found: ${error}`;
     }
 }
 function displayResults(data) {
@@ -24,7 +24,7 @@ function displayResults(data) {
     if (tempflo < 80.00) {
         let tempInt = parseInt(tempflo)
         let newInt =  Math.floor(tempInt * 0.1)
-        civN.innerHTML = `Civilization: ${civs[newInt-1].name}`;
+        civN.innerHTML = ` Civilization: ${civs[newInt-1].name}`;
     }
 }
 
