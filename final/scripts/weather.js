@@ -3,14 +3,13 @@ const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.76&lon=-111
 const civN = document.querySelector('#civN');
 
 import { civs } from '../data/civilizations.js'
-console.log(civs)
+
 
 async function apiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
