@@ -81,7 +81,7 @@ export const civs = [
         "uniDev": "Industrial Park(Steel Mill + Railyard); +2 resource capacity in this city.",
         "civUnit": "Prospector; can claim and inprove unowned resource tiles within 5 tiles from settlement, creates a path back to settlement.",
         "milUnit": "Marine; no combat or movement penalties from attacking from Embarkation(coast).",
-        "picture": "images/Civ7_America_1_.jpg"
+        "picture": "images/Civ7_America__1_.jpg"
     },
     {
         "name": "Mexico",
