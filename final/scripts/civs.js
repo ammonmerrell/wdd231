@@ -1,5 +1,7 @@
 import { civs } from '../data/civilizations.js'
 
+const gridButton = document.querySelector('#btn-grid');
+
 const cards = document.querySelector('#civilizations');
 async function getCivilizationData() {
     const response = await fetch(civs);
@@ -37,7 +39,11 @@ const displayCivs = (civ) => {
         card.appendChild(pic)
         cards.appendChild(card);
 
-        cards.app
     });
 }
 displayCivs()
+
+gridButton.addEventListener('click', () => {
+    gridButton.classList.toggle('form');
+    cards.classList.toggle('form');
+})

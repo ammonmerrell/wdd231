@@ -71,13 +71,35 @@ p, footer{
 }
 
 
+section img {
+    width: 350px;
+    height: 140px;
+}
+.civ.form img{
+    width: 180px;
+    height: 180px;
+}
 
-.com {
+ .grid::after {
+     content: "#";
+     font-size: 2rem;
+ }
+
+
+
+ .grid.form::after{
+     content: "|";
+     font-size: 2rem;
+ }
+
+
+
+.civ {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.com.form {
+.civ.form {
     display: grid;
     grid-template-columns: 320px;
     grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
