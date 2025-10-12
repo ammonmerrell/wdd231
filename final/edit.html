@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Submission</title>
+    <link rel="icon" href="images/game-helps-civ.ico">
+    <meta name="description" content="Ammon Merrell, The Game Helps, editer, edit">
+    <meta name="author" content="Ammon Merrell">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="The Game Helps editer">
+    <meta property="og:description" content="The article Submission page of The Game Helps website.">
+    <meta property="og:image" content="https://ammonmerrell.github.io/wdd231/final/edit.html">
+    <meta property="og:url" content="https://ammonmerrell.github.io/wdd231/final/edit.html">
+    <meta property="og:locale" content="en-US">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/game-helps-civ.ico" alt="Site Logo" width="20" height="20">
+        <span>The Game Helps</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="https://ammonmerrell.github.io/wdd231/final/index.html">Home</a></li>
+            <li><a href="https://ammonmerrell.github.io/wdd231/final/guides.html">Guides</a></li>
+            <li class="current"><a href="https://ammonmerrell.github.io/wdd231/final/edit.html">Edit</a></li>
+            <li><a href="https://ammonmerrell.github.io/wdd231/final/info.html">Info</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Edit Submission</h1>
+        <form method="get" action="thankyou.html" class="form">
+            <label>Username: <input type="text" name="user" required autocomplete="on" title="Your User Name."></label>
+            <label>Emal: <input type="email" name="email" required autocomplete="on" title="Your Email Address."></label>
+            <label>Description: <textarea name="desc" required autocomplete="on" title="What your guide talks about."></textarea></label>
+            <label><input type="submit" name="submit" value="Publish Guide"></label>
+        </form>
+
+    </main>
+    <footer><span id="year"></span><span>Ammon Merrell WDD231 </span><span id="modified"></span><a
+            href="attributions.html">attributions</a></footer>
+    <script src="scripts/weather.js" type="module"></script>
+</body>
+
+</html>
