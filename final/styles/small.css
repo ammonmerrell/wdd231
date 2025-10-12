@@ -53,9 +53,9 @@
     background-color: var(--accent-1-color);
 }
 
-
-
-
+div{
+    background-color: var(--secondary-color);
+}
 
 h1,
 h2,
