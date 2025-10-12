@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    
+    <script src="scripts/module.js" defer></script>
 </head>
 <body>
     <header>
@@ -48,7 +48,20 @@
         <p>The Game Helps is a website that lets users come together and share stories about games that they like. This webpage is for Civilization 7. There are guides and walkthroughs from other players who have played the game before in the guides section, or you can make your own guide on the edit page, just remember to follow our code of conduct.</p>
         <p>Not sure who to play as? Let the weather decide! Right now, it is <span id="current-temp"></span></p>
         <p id="civN"></p>
+
+        <button id="button" popovertarget="myModal">a</button>
+        <dialog id="myModal" id="newsletter" popover>
         
+            <h2>Modal Dialog</h2>
+            <p>This is a modal dialog.</p>
+            <button id="closeModal" popovertarget="myModal">Close</button>
+        </dialog>
+        <!-- <dialog id="mydialog">
+            <div>
+                <h2>asda</h2>
+                <button id="myclose">X</button>
+            </div>
+        </dialog> -->
     </main>
     <footer><span id="year"></span><span>Ammon Merrell WDD231 </span><span id="modified"></span><a href="attributions.html">attributions</a></footer>
     <script src="scripts/weather.js" type="module"></script>
