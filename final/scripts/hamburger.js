@@ -2,7 +2,7 @@ const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
 const gridButton = document.querySelector('#btn-grid');
-const comp = document.querySelector('#companies')
+
 
 navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
@@ -11,5 +11,5 @@ navbutton.addEventListener('click', () => {
 
 gridButton.addEventListener('click', () => {
     gridButton.classList.toggle('form');
-    comp.classList.toggle('form');
+    gridButton.classList.toggle('form');
 })
