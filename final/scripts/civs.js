@@ -23,12 +23,18 @@ const displayCivs = (civ) => {
         dev.textContent = `Infrastructure: ${civ.uniDev}`;
         civi.textContent = `Unique Civilian: ${civ.civUnit}`;
         mil.textContent = `unique millitary unit: ${civ.milUnit}`;
+        pic.src = `${civ.picture}`;
+        pic.alt = `${civ.name}`;
+        pic.loading = "lazy";
+        pic.width = 480;
+        pic.height = 270;
 
         card.appendChild(aname);
         card.appendChild(abui);
         card.appendChild(dev);
         card.appendChild(civi);
         card.appendChild(mil);
+        card.appendChild(pic)
         cards.appendChild(card);
 
         cards.app
