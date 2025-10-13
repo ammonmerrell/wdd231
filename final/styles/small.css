@@ -114,3 +114,7 @@ section {
 p {
     padding-left: 10px;
 }
+
+::backdrop{
+    color: rgb(0 0 0 /50%);
+}
