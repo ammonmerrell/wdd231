@@ -112,6 +112,6 @@ export const civs = [
         "civUnit": "Zamindar; gain +1 population when founding towns.",
         "milUnit": "Sepoy; has siege(45) and range(5).",
         "picture": "images/Civ7_Mughal.jpg"
-    },
+    }
     
 ]
