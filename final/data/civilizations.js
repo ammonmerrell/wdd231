@@ -30,7 +30,8 @@ export const civs = [
         "civUnit": "Logios; great person who can only be trained in cities with an Acropolis(unique quarter), effect is random.",
         "milUnit": "Hoplite; +2 combat if adjacent to another Hoplite.",
         "picture": "images/Greece.jpg"
-    }, {
+    },
+    {
         "name": "Egypt",
         "ability": "+1 production on Navigable Rivers",
         "uniDev": "Necropolis(Mastaba + Mortuary Temple); gain +100 gold when a wonder is completed in this city",
@@ -45,7 +46,8 @@ export const civs = [
         "civUnit": "Conquistador; great person who can only be built in cities with a wharf, random effects.",
         "milUnit": "Tercio; +2 combat, adjacent units get +3 combat vs cavalry units(bonus is only applied once)",
         "picture": "images/CIV7_Spain.jpg"
-    }, {
+    },
+    {
         "name": "Abbasid ",
         "ability": "gain +30 gold for each rural tile in city when it creates a specialist.",
         "uniDev": "Ulema(Madrasa + Mosque) +1 science to all specialists in city.",
@@ -60,7 +62,8 @@ export const civs = [
         "civUnit": "Tajiro; unique merchent, can gain +100 gold when making a trade route with a navigable river.",
         "milUnit": "Gold Bangles Infantry; +5 combat when on a resource tile, +%100 gold when pillaging a trade route.",
         "picture": "images/Civ7_Songhai.jpg"
-    }, {
+    },
+    {
         "name": "Ming",
         "ability": "+50% science in capital, -15 science for each policy in government.",
         "uniDev": "Ming Great Wall; +5 culture, +1 gold for each adjacent Fortification, counts as a Fortification.",
@@ -75,7 +78,8 @@ export const civs = [
         "civUnit": "Sokeman; unique settler, gain wall in city center when founding a town.",
         "milUnit": "Chevaler; +3 combat vs units with less movement.",
         "picture": "images/Civ7_Norman.jpg"
-    }, {
+    },
+    {
         "name": "America",
         "ability": "gain +100 gold when improving a resource.",
         "uniDev": "Industrial Park(Steel Mill + Railyard); +2 resource capacity in this city.",
@@ -90,7 +94,8 @@ export const civs = [
         "civUnit": "Revolucionario; great person who can only be trained in cities with a Zócalo(unique quarter), random effects.",
         "milUnit": "Soldaderas; adjacent units heal +10 hp, effect does not stack.",
         "picture": "images/Civ7_Mexico.jpg"
-    }, {
+    },
+    {
         "name": "Qing",
         "ability": "+4 gold, +3 culture, +2 influence, and -1 science on imported resources.",
         "uniDev": "Huiguan(Shiguan + Qianzhuang); +25% influence in this city.",
@@ -105,7 +110,8 @@ export const civs = [
         "civUnit": "Cossack; unique bonus cavalry unit, -5 combat. +4 when in friendly territory, does not replace other cavalry units.",
         "milUnit": "Katyusha Rocket Launcher; +1 movment, -10 siege combat, can damage units around target area.",
         "picture": "images/Civ7_Russia.jpg"
-    }, {
+    },
+    {
         "name": "Mughal",
         "ability": "+75% gold from everything, -25% everything else.",
         "uniDev": "Stepwell; +2 gold, +2 food from adjacent farms.",
