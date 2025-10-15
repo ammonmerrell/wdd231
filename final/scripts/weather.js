@@ -34,7 +34,7 @@ function displayResults(data) {
             newInt = 14;
             civN.innerHTML = ` Civilization: ${civs[newInt].name}`;
             civa.innerHTML = ` Civilization: ${civs[newInt].name}`;
-            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].unidev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
+            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].uniDev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
             civimg.src = `${civs[newInt].picture}`;
             civimg.alt = `${civs[newInt].name}`;
         }
@@ -42,7 +42,7 @@ function displayResults(data) {
             newInt = 11;
             civN.innerHTML = ` Civilization: ${civs[newInt].name}`;
             civa.innerHTML = ` Civilization: ${civs[newInt].name}`;
-            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].unidev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
+            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].uniDev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
             civimg.src = `${civs[newInt].picture}`;
             civimg.alt = `${civs[newInt].name}`;
         }
@@ -53,7 +53,7 @@ function displayResults(data) {
         let newInt =  Math.floor(tempInt * 0.1)
         civN.innerHTML = ` Civilization: ${civs[newInt - 1].name}`;
         civa.innerHTML = ` Civilization: ${civs[newInt - 1].name}`;
-        civb.innerHTML = `Ability: ${civs[newInt - 1].ability}\nInfrastacture: ${civs[newInt - 1].unidev}\nCivilian: ${civs[newInt - 1].civUnit}\nMillitary: ${civs[newInt - 1].milUnit}`;
+        civb.innerHTML = `Ability: ${civs[newInt - 1].ability}\nInfrastacture: ${civs[newInt - 1].uniDev}\nCivilian: ${civs[newInt - 1].civUnit}\nMillitary: ${civs[newInt - 1].milUnit}`;
         civimg.src = `${civs[newInt-1].picture}`;
         civimg.alt = `${civs[newInt-1].name}`;
     }
@@ -64,7 +64,7 @@ function displayResults(data) {
             newInt = 13;
             civN.innerHTML = ` Civilization: ${civs[newInt].name}`;
             civa.innerHTML = ` Civilization: ${civs[newInt].name}`;
-            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].unidev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
+            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].uniDev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
             civimg.src = `${civs[newInt].picture}`;
             civimg.alt = `${civs[newInt].name}`;
         }
@@ -72,7 +72,7 @@ function displayResults(data) {
             newInt = 12;
             civN.innerHTML = ` Civilization: ${civs[newInt].name}`;
             civa.innerHTML = ` Civilization: ${civs[newInt].name}`;
-            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].unidev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
+            civb.innerHTML = `Ability: ${civs[newInt].ability}\nInfrastacture: ${civs[newInt].uniDev}\nCivilian: ${civs[newInt].civUnit}\nMillitary: ${civs[newInt].milUnit}`;
             civimg.src = `${civs[newInt].picture}`;
             civimg.alt = `${civs[newInt].name}`;
         }
