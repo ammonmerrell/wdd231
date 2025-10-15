@@ -45,7 +45,7 @@ export const civs = [
         "uniDev": "Plaza(Casa Consistorial + Casa de Contratación); +2 gold in this city for every settlement in distant lands(can only be built in homelands)",
         "civUnit": "Conquistador; great person who can only be built in cities with a wharf, random effects.",
         "milUnit": "Tercio; +2 combat, adjacent units get +3 combat vs cavalry units(bonus is only applied once)",
-        "picture": "images/CIV7_Spain.jpg"
+        "picture": "images/Civ7_Spain.jpg"
     },
     {
         "name": "Abbasid ",
