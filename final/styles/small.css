@@ -71,14 +71,6 @@ p, footer{
 }
 
 
-section img {
-    width: 350px;
-    height: 140px;
-}
-.civ.form img{
-    width: 180px;
-    height: 180px;
-}
 
  .grid::after {
      content: "#";
