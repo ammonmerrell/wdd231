@@ -65,13 +65,43 @@ async function apiFetch2() {
 
 function displayResults(data) {
 
-    // console.log(data.properties.periods[0].probabilityOfPrecipitation.value)
-    // weatherTemp.innerHTML = `${data.properties.periods[0].temperature}&deg;F`;
-    // const iconsrc = `${data.properties.periods[0].icon}`;
+    console.log(data.properties.periods[0].probabilityOfPrecipitation.value)
+    weatherTemp.innerHTML = `${data.properties.periods[0].temperature}&deg;F`;
+    const iconsrc = `${data.properties.periods[0].icon}`;
 
-    // weatherIcon.setAttribute('src', iconsrc);
-    // weatherIcon.setAttribute('alt', data.properties.periods[0].shortForecast);
-    // captionDest.textContent = `${data.properties.periods[0].shortForecast}`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.properties.periods[0].shortForecast);
+    captionDest.textContent = `${data.properties.periods[0].shortForecast}`;
+
+    console.log(data.properties.periods[0].probabilityOfPrecipitation.value)
+    weatherTemp.innerHTML = `${data.properties.periods[0].temperature}&deg;F`;
+    const iconsrc1 = `${data.properties.periods[1].icon}`;
+
+    weatherIcon1.setAttribute('src', iconsrc);
+    weatherIcon1.setAttribute('alt', data.properties.periods[1].shortForecast);
+    captionDest1.textContent = `${data.properties.periods[1].shortForecast}`;
+
+    console.log(data.properties.periods[1].probabilityOfPrecipitation.value)
+    weatherTemp1.innerHTML = `${data.properties.periods[1].temperature}&deg;F`;
+    const iconsrc2 = `${data.properties.periods[2].icon}`;
+
+    weatherIcon2.setAttribute('src', iconsrc);
+    weatherIcon2.setAttribute('alt', data.properties.periods[2].shortForecast);
+    captionDest2.textContent = `${data.properties.periods[2].shortForecast}`;
+
+    console.log(data.properties.periods[2].probabilityOfPrecipitation.value)
+    weatherTemp2.innerHTML = `${data.properties.periods[2].temperature}&deg;F`;
+    const iconsrc3 = `${data.properties.periods[3].icon}`;
+
+    weatherIcon3.setAttribute('src', iconsrc);
+    weatherIcon3.setAttribute('alt', data.properties.periods[3].shortForecast);
+    captionDest3.textContent = `${data.properties.periods[3].shortForecast}`;
+
+    console.log(data.properties.periods[3].probabilityOfPrecipitation.value)
+    weatherTemp3.innerHTML = `${data.properties.periods[3].temperature}&deg;F`;
+    
+
+    
 
     // NASA one
 
@@ -84,17 +114,17 @@ function displayResults(data) {
 
     //     Movie data
     
-    weatherTemp2.innerHTML = `${data.Title}&deg;F`;
-    const desc = data.Poster;
-    console.log(data.Title)
-    weatherIcon2.setAttribute('src', desc);
-    weatherIcon2.setAttribute('alt', data.Title);
-    captionDest2.textContent = data.Plot;
+    // weatherTemp2.innerHTML = `${data.Title}&deg;F`;
+    // const desc = data.Poster;
+    // console.log(data.Title)
+    // weatherIcon2.setAttribute('src', desc);
+    // weatherIcon2.setAttribute('alt', data.Title);
+    // captionDest2.textContent = data.Plot;
 
 
 
 
 }
-// apiFetch();
+apiFetch();
 // apiFetch1();
-apiFetch2();
+// apiFetch2();
