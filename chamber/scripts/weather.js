@@ -14,11 +14,26 @@ const weatherTemp3 = document.querySelector('#current-temp3');
 const weatherIcon3 = document.querySelector('#weather-icon3');
 const captionDest3 = document.querySelector('#figcaption3');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.76&lon=-111.89&units=imperial&appid=6c343c2a3ace250294bb79f581a2a9df';
-const urlf = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.76&lon=-111.89&units=imperial&appid=6c343c2a3ace250294bb79f581a2a9df';
-
+const url = 'https://api.weather.gov/gridpoints/SLC/100,175/forecast/hourly';
+const urlf = 'https://api.nasa.gov/planetary/apod?api_key=B8IHaoaxXWHG5qLjOkEGGBU8DdRzfgB3Zkuugk8i';
+const urlm = 'https://www.omdbapi.com/?t=up&apikey=3cf352d ';
 
 async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function apiFetch1() {
     try {
         const response = await fetch(urlf);
         if (response.ok) {
@@ -33,43 +48,53 @@ async function apiFetch() {
     }
 }
 
+async function apiFetch2() {
+    try {
+        const response = await fetch(urlm);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 function displayResults(data) {
 
-    let desc = data.list[0].weather[0].icon;
-    weatherTemp.innerHTML = `${data.list[0].main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
+    // console.log(data.properties.periods[0].probabilityOfPrecipitation.value)
+    // weatherTemp.innerHTML = `${data.properties.periods[0].temperature}&deg;F`;
+    // const iconsrc = `${data.properties.periods[0].icon}`;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.list[0].weather[0].description);
-    captionDest.textContent = `${data.list[0].weather[0].description}`;
+    // weatherIcon.setAttribute('src', iconsrc);
+    // weatherIcon.setAttribute('alt', data.properties.periods[0].shortForecast);
+    // captionDest.textContent = `${data.properties.periods[0].shortForecast}`;
 
-    let desc1 = data.list[1].weather[0].icon;
-    weatherTemp1.innerHTML = `${data.list[1].main.temp}&deg;F`;
-    const iconsrc1 = `https://openweathermap.org/img/wn/${data.list[1].weather[0].icon}@2x.png`;
+    // NASA one
 
-    weatherIcon1.setAttribute('src', iconsrc1);
-    weatherIcon1.setAttribute('alt', data.list[1].weather[0].description);
-    captionDest1.textContent = `${data.list[1].weather[0].description}`;
+    // weatherTemp1.innerHTML = `${data.title}`;
+    // const iconsrc1 = `${data.url}`;
 
-    let desc2 = data.list[2].weather[0].icon;
-    weatherTemp2.innerHTML = `${data.list[2].main.temp}&deg;F`;
-    const iconsrc2 = `https://openweathermap.org/img/wn/${data.list[2].weather[0].icon}@2x.png`;
+    // weatherIcon1.setAttribute('src', iconsrc1);
+    // weatherIcon1.setAttribute('alt', data.Title);
+    // captionDest1.textContent = `${data.explanation}`;
 
-    weatherIcon2.setAttribute('src', iconsrc2);
-    weatherIcon2.setAttribute('alt', data.list[2].weather[0].description);
-    captionDest2.textContent = `${data.list[2].weather[0].description}`;
+    //     Movie data
+    
+    weatherTemp2.innerHTML = `${data.Title}&deg;F`;
+    const desc = data.Poster;
+    console.log(data.Title)
+    weatherIcon2.setAttribute('src', desc);
+    weatherIcon2.setAttribute('alt', data.Title);
+    captionDest2.textContent = data.Plot;
 
 
-    let desc3 = data.list[3].weather[0].icon;
-    weatherTemp3.innerHTML = `${data.list[3].main.temp}&deg;F`;
-    const iconsrc3 = `https://openweathermap.org/img/wn/${data.list[3].weather[0].icon}@2x.png`;
-
-    weatherIcon3.setAttribute('src', iconsrc3);
-    weatherIcon3.setAttribute('alt', data.list[3].weather[0].description);
-    captionDest3.textContent = `${data.list[3].weather[0].description}`;
 
 
 }
-apiFetch();
-
-
+// apiFetch();
+// apiFetch1();
+apiFetch2();
