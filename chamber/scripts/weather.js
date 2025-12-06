@@ -13,10 +13,11 @@ const captionDest2 = document.querySelector('#figcaption2');
 const weatherTemp3 = document.querySelector('#current-temp3');
 const weatherIcon3 = document.querySelector('#weather-icon3');
 const captionDest3 = document.querySelector('#figcaption3');
-
+let movie = "up";
+let long = ''
 const url = 'https://api.weather.gov/gridpoints/SLC/100,175/forecast/hourly';
 const urlf = 'https://api.nasa.gov/planetary/apod?api_key=B8IHaoaxXWHG5qLjOkEGGBU8DdRzfgB3Zkuugk8i';
-const urlm = 'https://www.omdbapi.com/?t=up&apikey=3cf352d ';
+const urlm = `https://www.omdbapi.com/?t=${movie}&apikey=3cf352d${long}`;
 
 async function apiFetch() {
     try {
@@ -51,6 +52,7 @@ async function apiFetch1() {
 async function apiFetch2() {
     try {
         const response = await fetch(urlm);
+        console.log(response)
         if (response.ok) {
             const data = await response.json();
             console.log(data);
@@ -114,12 +116,13 @@ function displayResults(data) {
 
     //     Movie data
     
-    // weatherTemp2.innerHTML = `${data.Title}&deg;F`;
-    // const desc = data.Poster;
-    // console.log(data.Title)
-    // weatherIcon2.setAttribute('src', desc);
-    // weatherIcon2.setAttribute('alt', data.Title);
-    // captionDest2.textContent = data.Plot;
+
+    weatherTemp2.innerHTML = `${data.Title}&deg;F`;
+    const desc = data.Poster;
+    console.log(data.Title)
+    weatherIcon2.setAttribute('src', desc);
+    weatherIcon2.setAttribute('alt', data.Title);
+    captionDest2.textContent = data.Plot;
 
 
 
@@ -127,4 +130,5 @@ function displayResults(data) {
 }
 apiFetch();
 // apiFetch1();
+
 // apiFetch2();
